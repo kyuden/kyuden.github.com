@@ -1,0 +1,42 @@
+markdown: kramdown
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md", "vender"] # files to exclude
+pygments: true
+
+title: kyuden
+description:
+author:
+  name: kyuden
+  email: msmsms.um@gmail.com
+  github: Kyuden
+  twitter: kyuden_
+  pinterest:
+  linkedin:
+  bio: favarite ruby, rails, Angular.JS
+  bio2: 四畳半神話大系
+  email_md5: e388dc8d354c829d311ee78e024ce30e
+
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
+markdown: kramdown
+BASE_PATH: http://kyuden.org
+
+# All links will be namespaced by BASE_PATH if defined.
+# Links in your website should always be prefixed with {{ site.BASE_PATH }}
+# Do not put a "/" at the end of the url.
+#
+# CNAME (http://yourcustomdomain.com)
+#   DO NOT SET BASE_PATH JUST LEAVE IT BLANK
+#   (urls will be prefixed with "/" and work relatively)
+#
+# GitHub Pages (http://username.github.io)
+#   DO NOT SET BASE_PATH JUST LEAVE IT BLANK
+#   (urls will be prefixed with "/" and work relatively)
+#
+# GitHub Project Pages (http://username.github.io/project-name)
+#  A GitHub Project site exists in the `gh-pages` branch of one of your repositories.
+#  REQUIRED! Set BASE_PATH to "http://username.github.io/project-name"
