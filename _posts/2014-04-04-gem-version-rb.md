@@ -1,6 +1,6 @@
 ---
 layout: post
-title: インスタンス変数生成のタイミング
+title: my version.rb
 categories: [ruby]
 tags: [gem]
 description: gemのversion.rbです....
