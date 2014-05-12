@@ -4,6 +4,7 @@
 {% include header.html %}
 
    <body>
+  　<div class="body" data-anijs="if: DOMContentLoaded, on: document, do: flipInY">
    		<nav class="navbar navbar-default visible-xs" role="navigation">
 		  <!-- Brand and toggle get grouped for better mobile display -->
 		  <div class="navbar-header">
@@ -69,10 +70,11 @@
 
 		</div>
 
-    
+  </div>
 	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/js/app.js"></script>
+  <script type="text/javascript" src="anijs-min.js"></script>
    </body>
 
 </html>
