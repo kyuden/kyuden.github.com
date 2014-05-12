@@ -1,7 +1,9 @@
 <! -- sidebar.html -->
 <header class="sidebar-header" role="banner">
 	<a href="{{ site.BASE_PATH }}/">
-		<img data-anijs="if: mouseouver, on: window, do: swing animated" src="http://www.gravatar.com/avatar/{{site.author.email_md5}}?s=150" class="img-circle" />
+	  <div id="profile-image" data-anijs="if: animationend, on: #image-remove, do: hinge animated; if: mouseout, do: wobble animated, after: removeAnim">
+		<img src="http://www.gravatar.com/avatar/{{site.author.email_md5}}?s=150" class="img-circle" />
+		</div>
 	</a>
 	<h3 class="title">
         <a href="{{ site.BASE_PATH }}/">{{ site.title }}</a>
