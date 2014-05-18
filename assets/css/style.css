@@ -59,7 +59,7 @@ article{
 	font-size: 14px;
 	letter-spacing: 3px;
   color: white;
-  background-color: black;
+  background-color: gray;
 }
 
 article.home div a, article.home pre a { color: #2c3e50; }
