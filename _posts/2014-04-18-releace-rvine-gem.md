@@ -12,9 +12,10 @@ RvineはVine APIのruby wrapperです。
 github: [Kyuden/rvine](https://github.com/Kyuden/rvine)
 
 
-<iframe class="vine-embed" src="https://vine.co/v/MOQ9PzIrgI3/embed/postcard?audio=1" width="480" height="480" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
-<iframe class="vine-embed" src="https://vine.co/v/hllrJg3B9Iw/embed/postcard?audio=1" width="480" height="480" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
-<iframe class="vine-embed" src="https://vine.co/v/MAH9a21adXL/embed/postcard?audio=1" width="480" height="480" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
+<iframe class="vine-embed" src="https://vine.co/v/MOQ9PzIrgI3/embed/postcard?audio=1" width="320" height="320" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
+<iframe class="vine-embed" src="https://vine.co/v/Mvxx9PeqmWD/embed/postcard?audio=1" width="320" height="320" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
+<iframe class="vine-embed" src="https://vine.co/v/hllrJg3B9Iw/embed/postcard?audio=1" width="320" height="320" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
+<iframe class="vine-embed" src="https://vine.co/v/MAH9a21adXL/embed/postcard?audio=1" width="320" height="320" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
 
 
 感性の豊かさがすばらしいっすね。動画作ってアップしないだろうけど、見る分には楽しいです。日本人の投稿は少ないのですが、それがまた良かったり。
