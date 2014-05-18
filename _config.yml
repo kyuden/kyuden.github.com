@@ -6,7 +6,7 @@ paginate_path: "page:num"
 exclude: ["README.md", "vender"] # files to exclude
 pygments: true
 
-title: kyuden
+title: kyuden blog
 description:
 author:
   name: kyuden
