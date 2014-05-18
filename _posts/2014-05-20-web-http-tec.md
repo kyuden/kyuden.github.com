@@ -11,4 +11,4 @@ fullview: true
 
 WebApplicationFramworkをこつこつ作っているがこれがとても面白い。今日は`redirect_to`をサポートした。  
 Webアプリを支えるモノ作るには、webを支える技術を探求せねばと購入。  
-[Kyuden/salen](https://github.com/Kyuden/salen) Salen is a small web application framework.
+[[Kyuden/salen]](https://github.com/Kyuden/salen) Salen is a small web application framework.
