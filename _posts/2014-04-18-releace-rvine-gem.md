@@ -3,7 +3,8 @@ layout: post
 title: Rvineっていうgem作った
 categories: [ruby, my_products]
 tags: [gem]
-description: Vine APIのruby wrapperであるRvineというgemを作りました。Vineをリソースとしたバイラルメディアサービスをrubyで作りたい人はRvine使ってみては如何ですか？機能が足りなければIssueにあ....
+description: Vine APIのruby
+fullview: true
 ---
 
 [Rvine](https://github.com/Kyuden/rvine)っていうgem作りました。

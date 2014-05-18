@@ -3,7 +3,7 @@ layout: post
 title: 引数の重複
 categories: [ruby]
 tags: [refactor, ninpo]
-description: 引数の重複を感じたらこのエントリー
+fullview: true
 ---
 
 例えばこんなコード  

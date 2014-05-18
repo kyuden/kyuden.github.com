@@ -3,7 +3,7 @@ layout: post
 title: インスタンス変数生成のタイミング
 categories: [ruby]
 tags: [syntax]
-description: インスタンス変数は値が代入された時に初めて生成されます....
+fullview: true
 ---
 
 インスタンス変数は値が代入された時に初めて生成されます。

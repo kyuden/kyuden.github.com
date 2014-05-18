@@ -3,7 +3,7 @@ layout: post
 title: hashのnest, nest, nest...
 categories: [ruby]
 tags: [ninpo]
-description: N階層のネストhashを簡単に作る
+fullview: true
 ---
 
 N階層でネストさせるhashの宣言はこんな感じに書くと良い

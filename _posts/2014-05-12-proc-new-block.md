@@ -3,7 +3,7 @@ layout: post
 title: Proc.new(&block)という名の有難迷惑
 categories: [ruby]
 tags: [syntax, ninpo]
-description: Proc.new(&block)への不満をつらつらと
+fullview: true
 ---
 
 いつもの如くgemリーディングを行っていたらこんなコードに出くわした

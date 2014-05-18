@@ -3,7 +3,7 @@ layout: post
 title: Keep Finders on Their Own Model
 categories: [rails]
 tags: [antipatterns, rails3]
-description: rails antipatterns....
+fullview: true
 ---
 
 rails_antipatternsについて書いていきます

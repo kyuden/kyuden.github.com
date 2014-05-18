@@ -3,7 +3,7 @@ layout: post
 title: my version.rb
 categories: [ruby]
 tags: [gem]
-description: gemのversion.rbです....
+fullview: true
 ---
 
 gemのversion.rbです

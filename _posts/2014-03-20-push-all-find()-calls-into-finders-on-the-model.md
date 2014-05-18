@@ -3,7 +3,7 @@ layout: post
 title: Push All find() Calls into Finders on the Model
 categories: [rails]
 tags: [antipatterns, rails3]
-description: rails antipatterns....
+fullview: true
 ---
 
 rails_antipatternsについて書いていきます
