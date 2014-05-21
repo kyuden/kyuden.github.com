@@ -42,8 +42,8 @@ a.nav-link:hover { color: #777 }
 }
 
 .navbar-header {
-  background-image: url("../media/nav.jpg");
-  background-position: 59% 0%;
+  border-bottom: 2px solid #ecf0f1;
+  background-color: white;
 }
 
 #bio {
