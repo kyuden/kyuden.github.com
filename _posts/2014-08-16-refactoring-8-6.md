@@ -126,6 +126,7 @@ class ResultNetwork
   def name
     old_networks.collect {|network| network.name}.join(" - ")
   end
+end
 
   new_network = ResultNetwork.new
 
@@ -139,7 +140,6 @@ class ResultNetwork
   new_network.nodes << c_node
 
   new_network.name
-end
 
 {% endhighlight %}
 
