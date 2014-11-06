@@ -20,8 +20,8 @@ tagline:
                 {{ post.date | date: "%Y" }}
             </span>
 
-            <h2 data-anijs="if: mouseout, do: wobble animated, after: removeAnim">
-                <a href="{{ site.BASE_PATH }}{{ post.url }}" >{{ post.title }}</a>
+            <h2 class="col-sma-top" data-anijs="if: mouseout, do: wobble animated, after: removeAnim">
+                <a class="top-entry-title" href="{{ site.BASE_PATH }}{{ post.url }}" >{{ post.title }}</a>
             </h2>
 
             <div>

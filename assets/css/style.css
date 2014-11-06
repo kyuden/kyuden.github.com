@@ -137,6 +137,16 @@ footer {
 
 @media (max-width: 767px) {
 
+  .col-sma-top {
+    margin-top: 0px;
+    border-bottom: 1px solid #e7e7e7;
+  }
+
+  .top-entry-title {
+    font-size: 60%;
+    margin-bottom: 0px;
+  }
+
   .highlight pre code {
     font-size: 50%;
   }
