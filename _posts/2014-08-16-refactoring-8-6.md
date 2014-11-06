@@ -6,10 +6,9 @@ tags: [refactoring]
 fullview: true
 ---
 
-書籍「リファクタリングruby」8.6　ハッシュからオブジェクトへ  
-異なる種類のオブジェクトを格納し、復数の目的のために渡され使用されるhashはhashのキーに何が格納されているか分からなくなる。ということでオブジェクトする。
+書籍「リファクタリングruby」8.6　ハッシュからオブジェクトへ。異なる種類のオブジェクトを格納し、復数の目的のために渡され使用されるhashはhashのキーに何が格納されているか分からなくなる。ということでオブジェクトする。
 
-{% highlight ruby %}
+{% highlight ruby linenos linenos %}
 
 class NetWork
   attr_reader :name
@@ -45,7 +44,7 @@ new_network[:name] = new_network[:old_networks].collect {|net_work| net_work.nam
 
 `new_network`は異なる種類のオブジェクトが格納されている
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 
 class ResultNetwork
   attr_accessor :old_networks, :nodes
@@ -81,7 +80,7 @@ new_network = ResultNetwork.new
 
 ひとまず`instance_variable_get` `instance_variable_set`を使用しhashをオブジェクトに置き換えても既存処理が通るようにする。
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 
 class ResultNetwork
   attr_accessor :old_networks, :nodes, name
@@ -106,7 +105,7 @@ new_network.name = new_network.old_networks.collect {|net_work| net_work.name}.j
 
 置き換える
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 
 class ResultNetwork
   attr_accessor :old_networks, :nodes

@@ -8,7 +8,7 @@ fullview: true
 
 `Block`はクロージャを期待する場合と, 単なるblockスタイルで分かりやすく手続きを書きたいという2つの期待があると思ってる。(両方期待する場合もある)  
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 get '/' do
   "Hello Sinatra"
 end
@@ -16,7 +16,7 @@ end
 
 今日はSinatraようにblockスタイルで分かりやすく手続きを書きたい場合について書いていく。 大凡このような場合、blockを宣言したクラスはプロキシの責務を負うようなクラスで、実際blockを処理するのはサービス層に分類される別クラスだったりする。実現方法としてまず思いつくのは`instance_eval`だ
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 class Iga
   def kuchiyose &block
     Dragon.new("DragonFire").nin &block
@@ -36,7 +36,7 @@ class Dragon
 end
 {% endhighlight %}
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 Iga.new.kuchiyose do
   "Ninpo: #{waza}" # => "Ninpo: DragonFire"
 end

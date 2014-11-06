@@ -8,7 +8,7 @@ fullview: true
 
 gemのversion.rbです
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 module M
   class Version
     MAJOR = 0

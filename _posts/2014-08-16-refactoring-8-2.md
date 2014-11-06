@@ -8,7 +8,7 @@ fullview: true
 
 データ値が整形や値の抽出などで特別な振る舞いが増えてきた場合はデータ値をオブジェクトにするのが良い
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 class Order
   def initialize(customer)
      @customer  = customer
@@ -30,7 +30,7 @@ end
 
 Orderクラスに属性(customer)を操作する処理が復数定義されている
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 class Order
   def initialize(customer_name)
      @customer  = Customer.new(customer_name)

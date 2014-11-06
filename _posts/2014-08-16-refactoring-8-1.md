@@ -13,7 +13,7 @@ fullview: true
 アクセサを定義しておくとオーバーライドで変更できるのでスーパークラスのメソッドをそのまま使用することができる.  
 
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 class Item
   def initialize(base_price, tax_rate)
     @base_price = base_price
@@ -39,7 +39,7 @@ end
 
 税抜き価格　+ 税率　の定義が変更したわけでなく税率が加算され変化しただけなので上記の様に`total`を再定義するのは、保守面からも問題がある。
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 class Item
   attr_accessor :base_price, :tax_rate
 

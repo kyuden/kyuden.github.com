@@ -8,7 +8,7 @@ fullview: true
 
 rails_antipatternsについて書いていきます
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 class Address < ActiveRecord::Base
   belongs_to :customer
 end
@@ -43,13 +43,13 @@ end
 
 ## Follow the Law of Demeter
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 class Address < ActiveRecord::Base
   belongs_to :customer
 end
 {% endhighlight %}
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 class Customer < ActiveRecord::Base has_one :address
   has_many :invoices
 
@@ -71,7 +71,7 @@ class Customer < ActiveRecord::Base has_one :address
 end
 {% endhighlight %}
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 class Invoice < ActiveRecord::Base belongs_to :customer
   def customer_name
     customer.name
@@ -107,13 +107,13 @@ end
 
 ## Use  `delegate` of rails
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 class Address < ActiveRecord::Base
   belongs_to :customer
 end
 {% endhighlight %}
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 class Customer < ActiveRecord::Base
   has_one :address
   has_many :invoices
@@ -122,7 +122,7 @@ class Customer < ActiveRecord::Base
 end
 {% endhighlight %}
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 class Invoice < ActiveRecord::Base
   belongs_to :customer
 

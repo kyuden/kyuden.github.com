@@ -8,7 +8,7 @@ fullview: true
 
 rails_antipatternsについて書いていきます
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 class UsersController < ApplicationController
   def index
     @user = User.find(params[:id])
@@ -22,7 +22,7 @@ end
 [Solution: Push All find() Calls into Finders on the Model](kyuden.org/blog/2014/02/25/solution-push-all-find-calls-into-finders-on-the-model/)を適用してみよう
 
 ## [try1] Solution: Push All find() Calls into Finders on the Model
-{% highlight ruby %}
+{% highlight ruby linenos %}
 class UsersController < ApplicationController
   def index
     @user = User.find(params[:id])
@@ -31,7 +31,7 @@ class UsersController < ApplicationController
 end
 {% endhighlight %}
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 class User < ActiveRecord::Base
   has_many :memberships
 
@@ -48,7 +48,7 @@ end
 自身のModelのドメインを明確に。
 
 ## [try2] move Membership Model finder into the Membership Model From the User Model
-{% highlight ruby %}
+{% highlight ruby linenos %}
 class User < ActiveRecord::Base
   has_many:memberships
 
@@ -58,7 +58,7 @@ class User < ActiveRecord::Base
 end
 {% endhighlight %}
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 class Membership < ActiveRecord::Base
   belongs_to :user
 
@@ -71,7 +71,7 @@ end
 `where(:active => true)`とか`order("last_active_on DESC")`のクエリメソッドは他でも結構使えそう
 
 ## [try3] use the named scope of rails
-{% highlight ruby %}
+{% highlight ruby linenos %}
 class User < ActiveRecord::Base
   has_many :memberships
 
@@ -81,7 +81,7 @@ class User < ActiveRecord::Base
 end
 {% endhighlight %}
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 class Membership < ActiveRecord::Base
   belongs_to :user
   scope :only_active, where(:active => true)

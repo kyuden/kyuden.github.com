@@ -8,7 +8,7 @@ fullview: true
 
 例えばこんなコード  
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 def csv_data(since_time, till_time)
   User.actice_user(since_time, till_time)
 end
@@ -27,7 +27,7 @@ end
  * プレーンなデータの場合  
     `since_time`,`till_time`は他のクラスなどで生成されたデータで本クラスのメソッドに渡されているものとし、特に加工せず使い回すデータだとしましょう。そんなプレーンなデータである場合はデータをインスタンス変数として保持すると良いでしょう。具体的には  
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 def initialize(attr={})
   @since_time = attr[:since_time]
   @till_time  = attr[:till_time]
@@ -51,7 +51,7 @@ end
  * 何らか処理後(もしくは処理を行う予定の)のデータの場合  
    `since_time`,`till_time`が他のクラスから渡され、本クラスで処理を行った後使い回す場合、もしくは本クラスで処理によって求めたデータであるとしましょう。そのような何らか処理後(もしくは処理を行う予定の)のデータの場合はメソッド化すると良いでしょう。具体的には  
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 def csv_data
   User.actice_user(since_time, till_time)
 end
@@ -75,7 +75,7 @@ end
 
 メソッドを使用した場合も同様に、重複なくシンプルにすることが出来ました。
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 def since_time
    @since_time ||= Date.today
 end

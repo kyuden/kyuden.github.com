@@ -23,7 +23,7 @@ rails_antipatternsについて書いていきます
 
 ### [Try1] move the logic into the Controller
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 class UsersController < ApplicationController
   def index
     @users = User.order("last_name")
@@ -47,14 +47,14 @@ end
 * DBのfinderはModelで記述すべき
 
 ### [Try2] move the direct find call down into the Model
-{% highlight ruby %}
+{% highlight ruby linenos %}
 class UsersController < ApplicationController
   def index
     @users = User.ordered
   end
 end
 {% endhighlight %}
-{% highlight ruby %}
+{% highlight ruby linenos %}
 class User < ActiveRecord::Base
   def self.ordered
     order("last_name")
@@ -65,7 +65,7 @@ end
 railsではさらに美しく記述できる機能が用意されている
 
 ### [try3] use the named scpoe of rails
-{% highlight ruby %}
+{% highlight ruby linenos %}
 calss User < ActiveRecord::Base
   scope :orderd, order("last_name")
 end

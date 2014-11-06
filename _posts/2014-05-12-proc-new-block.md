@@ -8,7 +8,7 @@ fullview: true
 
 いつもの如くgemリーディングを行っていたらこんなコードに出くわした
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 def define_route path, options, &block
   self.route_defs << [path, options, Proc.new(&block)]
 end
@@ -17,7 +17,7 @@ end
 おや`Proc.new(&block)`て意味ないのでは..  
   
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 def define_route path, options, &block
   self.route_defs << [path, options, block]
 end
@@ -26,13 +26,13 @@ end
 そもそも引数の`&block`で`Proc`に変換しているので、この様に`Proc.new`しなくても、そのまま変換されたものを渡せばいいのでは  
   
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 Proc.new{ "kakuremi" }
 {% endhighlight %}
 
 `Proc.new`を使う場合はブロックを直接渡すか  
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 def ninpo
   Proc.new
 end
@@ -46,7 +46,7 @@ end
 
   
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 def define_route path, options, &block
   self.route_defs << [path, options, block]
 end
@@ -54,7 +54,7 @@ end
 
 もしくは
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 def define_route path, options
   self.route_defs << [path, options, Proc.new]
 end
@@ -64,7 +64,7 @@ end
 まぁでも先のコード書いた人の意図としては、Procオブジェクトであるのに`block`という変数名で配列に収めるのが気持ち悪かったのだろう。分からなくないでもありません。しかしブロックはオブジェクトではないので変数名が`block`である時点でそれはもう`Proc`なのですよ。それに「事情があって`Proc.new(&block)`で新たなオブジェクトを作ろうとしているのでは」とミスリーディングする恐れがある。  
   
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 def ninpo &block
   block.equal? Proc.new(&block) # => true
 end

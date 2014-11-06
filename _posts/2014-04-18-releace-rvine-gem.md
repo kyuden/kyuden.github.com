@@ -25,7 +25,7 @@ Vineをリソースとしたバイラルメディアサービスをrubyで作り
 僕は「◯◯を作った」というエントリーが大好きで、そこに価値を感じる性分なので、ちょこちょこと作っては公開していきたいす。にしても自分のgemがrubygems.orgからインストールできるのは地味に嬉しいっすね〜。ToDo:spec
 
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 gem install rvine
 {% endhighlight %}
 

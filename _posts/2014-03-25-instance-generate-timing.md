@@ -9,7 +9,7 @@ fullview: true
 インスタンス変数は値が代入された時に初めて生成されます。
 なので同じクラスのオブジェクトでもインスタンス変数の数が異なることが十分にあり得ますね
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 class MyClass
   def create
     @test = "hello"

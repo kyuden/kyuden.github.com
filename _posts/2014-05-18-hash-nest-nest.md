@@ -8,7 +8,7 @@ fullview: true
 
 N階層でネストさせるhashの宣言はこんな感じに書くと良い
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 hash = Hash.new {|h,k| h[k] = Hash.new(&h.default_proc) }
 hash[:get][:path] = '/' # => { get: {path: '/'} }
 {% endhighlight %}
