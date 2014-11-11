@@ -6,6 +6,8 @@ tags: [refactoring]
 fullview: true
 ---
 
+<a href="http://www.amazon.co.jp/gp/product/4048678841/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=4048678841&linkCode=as2&tag=msmsum-22"><img border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4048678841&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=msmsum-22" ></a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=msmsum-22&l=as2&o=9&a=4048678841" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
 書籍「リファクタリングruby」2章 ~ リファクタリングの原則 ~ を読み直してみました。また内容を忘れた頃に摘んで読みたい内容をいくつか書いておこうと思います。
 
 >機能追加とリファクタリングという別々の活動のために時間をはっきり区別すべきだ
