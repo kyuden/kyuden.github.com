@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  リファクタグリングの原則
+title:  リファクタリングの原則
 categories: [ruby, book]
 tags: [refactoring]
 fullview: true
